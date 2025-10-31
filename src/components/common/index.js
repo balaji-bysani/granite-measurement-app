@@ -1,0 +1,10 @@
+// Export all common components for easier imports
+export { default as Header } from './Header';
+export { default as CustomButton } from './CustomButton';
+export { default as FormField } from './FormField';
+export { default as CustomModal } from './CustomModal';
+export { default as LoadingSpinner } from './LoadingSpinner';
+export { default as ErrorBoundary } from './ErrorBoundary';
+export { default as ErrorAlert } from './ErrorAlert';
+export { default as ConfirmationModal } from './ConfirmationModal';
+export { default as VirtualizedTable } from './VirtualizedTable';
