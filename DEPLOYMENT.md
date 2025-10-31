@@ -21,7 +21,7 @@
 ### 1.2 Get Database Connection Details
 1. In your Supabase dashboard, go to **Settings** → **Database**
 2. Copy the connection details:
-   - **Host**: `db.almgebkuokumrifccofy.supabase.co`
+   - **Host**: `db.tdrlwskgkifkvrszrjhm.supabase.co`
    - **Database name**: `postgres`
    - **Port**: `5432`
    - **User**: `postgres`

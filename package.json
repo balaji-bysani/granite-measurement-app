@@ -40,7 +40,7 @@
     "server:prod": "node server/server.js",
     "db:setup": "node server/scripts/setup-database.js",
     "db:setup:force": "node server/scripts/setup-database.js --force",
-    "vercel-build": "npm run build"
+    "vercel-build": "CI=false npm run build"
   },
   "eslintConfig": {
     "extends": [

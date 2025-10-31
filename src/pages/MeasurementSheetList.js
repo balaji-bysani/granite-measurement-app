@@ -124,7 +124,7 @@ const MeasurementSheetList = () => {
     if (pagination.page !== 1) {
       setPagination(prev => ({ ...prev, page: 1 }));
     }
-  }, [debouncedSearchTerm, filters]);
+  }, [debouncedSearchTerm, filters, pagination.page]);
 
   // Handle search input
   const handleSearchChange = (e) => {
@@ -437,7 +437,7 @@ const MeasurementSheetList = () => {
       default:
         console.warn('Unknown action:', action);
     }
-  }, []);
+  }, [handleView, handleEdit, handleExport, handlePrint, handleDelete]);
 
   if (loading && measurementSheets.length === 0) {
     return <LoadingSpinner />;

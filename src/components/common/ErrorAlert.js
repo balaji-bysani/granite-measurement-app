@@ -24,7 +24,7 @@ const ErrorAlert = ({
 
       return () => clearTimeout(timer);
     }
-  }, [autoHide, autoHideDelay]);
+  }, [autoHide, autoHideDelay, handleDismiss]);
 
   const handleDismiss = () => {
     setShow(false);

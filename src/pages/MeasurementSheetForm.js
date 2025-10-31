@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, Alert, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import { CustomerSelectionInterface } from '../components/customer';
 import { 
@@ -50,7 +50,7 @@ const MeasurementSheetForm = () => {
     if (isEdit && id) {
       loadMeasurementSheet(id);
     }
-  }, [isEdit, id]);
+  }, [isEdit, id, loadMeasurementSheet]);
 
   const loadMeasurementSheet = async (sheetId) => {
     await executeWithErrorHandling(async () => {
